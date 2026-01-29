@@ -1,7 +1,13 @@
-a = int(input())
-b = int(input())
-c = 1
-for i in range(b):
-    c = c * a
-    i = i + 1
-print(c)
+#This is a comment
+#written in
+#more than just one line
+print("Hello, World!")
+
+print("Hello, World!") #This is a comment
+
+"""
+This is a comment
+written in
+more than just one line
+"""
+print("Hello, World!")
