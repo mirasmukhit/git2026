@@ -18,3 +18,7 @@ result = list(map(lambda x: x + 10, nums))
 print(result) #[15, 20, 25] add 10 to each elements
 
 
+a = [1, 2, 3]
+b = [4, 5, 6]
+sum_list = list(map(lambda x, y: x + y, a, b))
+print(sum_list) #[5,7,9]
