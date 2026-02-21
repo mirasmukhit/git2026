@@ -1,3 +1,8 @@
+#get __init__ --->  Set up this object when it is created
+#self.name = name --->  saves the name inside the object.
+#get.info --->  used to return information.
+
+
 class Person:
   def __init__(self, name):
     self.name = name
@@ -5,7 +10,7 @@ class Person:
   def greet(self):
     print("Hello, my name is " + self.name)
 
-p1 = Person("Emil")
+p1 = Person("Emil") #is eqal to "Person.__init__(p1, "Emil")""
 p1.greet() #Hello, my name is Emil
 
 
