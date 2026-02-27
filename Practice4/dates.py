@@ -18,5 +18,18 @@ print(x)
 
 
 
+from datetime import datetime,timedelta
+n  = datetime.now()
+print(n + timedelta(minutes = 60))
 
 
+
+
+
+from datetime import datetime,timedelta
+a = datetime(2026,12,30,15,30,00)
+b = datetime(2026,12,29,15,00,00)
+diff = a - b
+print(diff)
+print(diff.days)
+print(diff.total_seconds)
