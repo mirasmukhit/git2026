@@ -1,6 +1,7 @@
-arr = list(map(int,input().split()))
-def func(n):
-    yield arr*n
-n = int(input())
-for l in func(n):
-    print(l)
+import re
+s = input()
+x = re.search(r"\S+@\S+\.\S+",s)
+if x:
+    print(x)
+else:
+    print("not found")
