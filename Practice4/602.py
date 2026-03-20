@@ -1,11 +1,10 @@
-def func(n):
-    if n%2==0:
-        return n
+def func(x):
+    return x%2==0
 a = int(input())
 b = input().split()
-c = list()
+c = []
 for i in range(a):
-    b[i] = int(b[i])
+    b[i]=int(b[i])
     c.append(b[i])
 result = list(filter(func,c))
 print(len(result))
