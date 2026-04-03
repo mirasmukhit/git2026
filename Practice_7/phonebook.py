@@ -4,7 +4,7 @@ conn = psycopg2.connect(
     host = "localhost",
     dbname = "pp2_db",
     user = "postgres",
-    password = "081321"
+    password = "secret"
 )
 cur = conn.cursor()
 cur.execute("""
@@ -16,7 +16,7 @@ cur.execute("""
             """)
 with open("Practice_7/contacts.csv", "r") as f:
     reader = csv.reader(f)
-    next(reader)  # skip header
+    next(reader)  
 
     for row in reader:
         cur.execute("""
