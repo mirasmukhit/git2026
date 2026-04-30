@@ -29,7 +29,7 @@ def menu_screen():
             if btn_quit.is_clicked(e): return "QUIT"
 
         pygame.display.update()
-        clock.tick(60)
+        clock.tick(120)
 
 def game_over_screen(score, distance):
     btn_menu = Button(100, 350, 200, 50, "Main Menu")
@@ -47,7 +47,7 @@ def game_over_screen(score, distance):
             if btn_menu.is_clicked(e): return "MENU"
 
         pygame.display.update()
-        clock.tick(60)
+        clock.tick(120)
 
 def leaderboard_screen():
     btn_back = Button(100, 500, 200, 50, "Back")
@@ -69,7 +69,7 @@ def leaderboard_screen():
             if btn_back.is_clicked(e): return "MENU"
 
         pygame.display.update()
-        clock.tick(60)
+        clock.tick(120)
 
 def main():
     state = "MENU"
