@@ -150,7 +150,7 @@ class SnakeGame:
     def draw(self, screen):
         screen.fill((0, 0, 0))
         
-        if self.settings["grid_overlay"]:
+        if self.settings.get("grid_overlay", False):
             for x in range(0, W * CS, CS): pygame.draw.line(screen, (30, 30, 30), (x, 0), (x, H * CS))
             for y in range(0, H * CS, CS): pygame.draw.line(screen, (30, 30, 30), (0, y), (W * CS, y))
 

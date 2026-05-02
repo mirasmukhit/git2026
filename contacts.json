@@ -1,0 +1,15 @@
+[
+    {
+        "id": 3,
+        "name": "Miras",
+        "email": "miras@gmail.com",
+        "birthday": "2008-08-10",
+        "group_id": 2,
+        "phones": [
+            {
+                "phone": "8771455455866",
+                "type": "mobile"
+            }
+        ]
+    }
+]

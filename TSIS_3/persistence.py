@@ -6,7 +6,7 @@ LEADERBOARD_FILE = 'leaderboard.json'
 
 DEFAULT_SETTINGS = {
     "sound": True,
-    "color": "blue", # blue, red, or green
+    "color": "green", # blue, red, or green
     "difficulty": "normal" # easy, normal, hard
 }
 

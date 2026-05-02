@@ -1,9 +1,11 @@
 import psycopg2
-from config import DB_CONFIG
+import config
 
 def get_connection():
-    try:
-        return psycopg2.connect(**DB_CONFIG)
-    except Exception as e:
-        print(f"Database connection error: {e}")
-        return None
+    return psycopg2.connect(
+        dbname=config.DB_NAME,
+        user=config.DB_USER,
+        password=config.DB_PASSWORD,
+        host=config.DB_HOST,
+        port=config.DB_PORT
+    )

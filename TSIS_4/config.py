@@ -15,7 +15,7 @@ def load_settings():
         return DEFAULT_SETTINGS
     with open(SETTINGS_FILE, 'r') as f:
         settings = json.load(f)
-        settings['snake_color'] = tuple(settings['snake_color'])
+        settings['snake_color'] = tuple(settings.get('snake_color', (0, 255, 0)))
         return settings
 
 def save_settings(settings):

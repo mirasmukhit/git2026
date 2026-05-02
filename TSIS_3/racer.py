@@ -8,7 +8,7 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
         self.image = pygame.Surface((40, 60))
         colors = {"blue": (0, 0, 255), "red": (255, 0, 0), "green": (0, 255, 0)}
-        self.image.fill(colors.get(color_name, (0, 0, 255)))
+        self.image.fill(colors.get(color_name, (0, 255, 0)))
         self.rect = self.image.get_rect(center=(160, 520))
         self.shield_active = False
 
